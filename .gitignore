@@ -34,6 +34,11 @@ bld/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
+*.user
+*.suo
+*.cache
+*.dbmdl
+
 # Uncomment if you have tasks that create the project's static files in wwwroot
 #wwwroot/
 
@@ -398,3 +403,25 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+# Build output
+bin/
+obj/
+*.exe
+*.dll
+
+# Logs and local test files
+*.log
+*.tmp
+
+# OS/system junk
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# App-specific
+Scripts/config.json
+Scripts/logs/
+Scripts/RecycleBin/
+*.ps1~         # temp script backups

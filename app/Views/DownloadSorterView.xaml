@@ -1,0 +1,21 @@
+<UserControl x:Class="WinOpsToolkit.Views.DownloadSorterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="Auto" Width="Auto">
+    <StackPanel Margin="20">
+        <TextBlock Text="Download Sorter" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Instructions:" FontWeight="Bold" Margin="0,10,0,2"/>
+        <TextBlock TextWrapping="Wrap" FontSize="13">
+        This tool moves files and folders from your Downloads folder based on rules defined in your config file.
+        Click 'Run Now' to execute the sort script immediately.
+        Click 'View Logs' to review sorting history and activity.
+        Sorting rules and destinations are defined in: D:\Scripts\DownloadSorter\config.json
+        </TextBlock>
+        <Button Content="View Config File" Margin="0,5" Click="ViewConfig_Click"/>
+
+        <Button Content="Run Now" Margin="0,10" Click="RunNow_Click"/>
+        <Button Content="View Logs" Margin="0,5" Click="ViewLogs_Click"/>
+    </StackPanel>
+
+</UserControl>

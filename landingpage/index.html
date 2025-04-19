@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WinOps Toolkit</title>
+  <!-- Primary Meta Tags -->
+<meta name="title" content="WinOps Toolkit — PowerShell Toolkit for Windows Automation" />
+<meta name="description" content="A modular Windows configuration app powered by PowerShell scripts and a WPF GUI. Clean your Downloads folder, automate power plans, and more." />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yourdomain.com/" />
+<meta property="og:title" content="WinOps Toolkit — PowerShell Toolkit for Windows Automation" />
+<meta property="og:description" content="A modular Windows configuration app powered by PowerShell scripts and a WPF GUI." />
+<meta property="og:image" content="https://yourdomain.com/assets/preview.jpg" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://x.com/nabu_tech" />
+<meta name="twitter:title" content="WinOps Toolkit — PowerShell Toolkit for Windows Automation" />
+<meta name="twitter:description" content="Built for Windows power users. Modular, scriptable, and beautifully integrated." />
+<meta name="twitter:image" content="https://yourdomain.com/assets/preview.jpg" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>WinOps Toolkit</h1>
+      <p class="tagline">Modular PowerShell tools to optimize your Windows workflow.</p>
+    </div>
+    <div class="hero-videos">
+      <div class="video-container">
+        <img src="thumbnail-downloadsorter.jpg" alt="Download Sorter Preview" class="video-thumb">
+        <button class="btn-primary" onclick="openModal('DownloadSorter.mp4')">Watch the Demo – Download Sorter</button>
+      </div>
+      <div class="video-container">
+        <img src="thumbnail-powerprofiles.jpg" alt="Power Profiles Preview" class="video-thumb">
+        <button class="btn-primary" onclick="openModal('PowerProfiles.mp4')">Watch the Demo – Power Profiles</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <video id="modalVideo" width="100%" controls autoplay>
+        <source src="" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <main>
+
+    <section id="modules" class="features-section">
+      <h2>Included Modules</h2>
+    
+      <div class="feature-card">
+        <h3>📂 Download Sorter</h3>
+        <p>Automatically organize your Downloads folder with custom folder rules and age-based cleanups. Supports on-demand execution and background scheduling with logging.</p>
+      </div>
+    
+      <div class="feature-card">
+        <h3>⚡ Power Profiles</h3>
+        <p>Create Day/Night power plans from your current setup and switch between them based on system time. Full control over sleep and screen timeout with automation scripts.</p>
+      </div>
+    </section>
+    <section class="launch-roadmap">
+      <h2>🚀 Coming Soon + Roadmap</h2>
+    
+      <p class="intro">
+        WinOps Toolkit is under active development. Built to simplify configuration, automate tasks, and empower Windows power users with script-based control.
+      </p>
+    
+      <ul class="milestone-list">
+        <li>✅ Script-based architecture complete</li>
+        <li>🔄 GUI integration in progress</li>
+        <li>📦 Portable packaging upcoming</li>
+        <li>🧠 Smart scheduling planned</li>
+      </ul>
+    
+      <div class="cta-buttons">
+        <a href="https://github.com/Sammy-John/WinOps-Toolkit" target="_blank" class="btn-secondary">⭐ View on GitHub</a>
+        <a href="#modules" class="btn-link">Explore Included Modules</a>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>🔧 Built with ❤️, PowerShell, and WPF — designed for Windows power users.</p>
+      <p>
+        📂 <a href="https://github.com/Sammy-John/WinOps-Toolkit" target="_blank">GitHub</a> • 
+        🧠 <a href="https://www.linkedin.com/in/sammyjohnrawlinson/" target="_blank">LinkedIn</a> • 
+        🐦 <a href="https://x.com/nabu_tech" target="_blank">X</a> • 
+        🏠 <a href="/">Home</a> • 
+        💼 <a href="https://sammyjohnrawlinson.teknabu.com/portfolio/" target="_blank">Portfolio</a> • 
+        📚 <a href="https://sammyjohnrawlinson.teknabu.com/blog/" target="_blank">About</a>
+      </p>
+      <p>© 2025 Sammy John Rawlinson. Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License 2.0</a>.</p>
+    </div>
+  </footer>
+  
+
+  <script>
+    function openModal(videoSrc) {
+      const modal = document.getElementById('videoModal');
+      const video = document.getElementById('modalVideo');
+      video.querySelector('source').src = videoSrc;
+      video.load();
+      modal.style.display = 'block';
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('videoModal');
+      const video = document.getElementById('modalVideo');
+      video.pause();
+      video.currentTime = 0;
+      modal.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

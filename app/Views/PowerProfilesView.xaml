@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="WinOpsToolkit.Views.PowerProfilesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="Auto" Width="Auto">
+    <StackPanel Margin="20">
+        <TextBlock Text="Power Profiles Manager" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <TextBlock TextWrapping="Wrap" FontSize="13" Foreground="Gray" Margin="0,0,0,15">
+            This module manages power plans using modular PowerShell scripts.
+            Profiles are switched based on time of day or on-demand.
+        </TextBlock>
+
+        <Button Content="🔧 Create Day/Night Profiles" Click="RunCreateProfiles_Click" Margin="0,5"/>
+        <Button Content="⚙️ Set Sleep/Screen Timeouts" Click="RunSetTimeouts_Click" Margin="0,5"/>
+        <Separator Margin="0,10"/>
+        <Button Content="🌞 Switch to Day Profile" Click="RunSwitchToDay_Click" Margin="0,5"/>
+        <Button Content="🌙 Switch to Night Profile" Click="RunSwitchToNight_Click" Margin="0,5"/>
+        <Separator Margin="0,10"/>
+        <Button Content="⏱ Run Auto-Switch Script" Click="RunAutoSwitch_Click" Margin="0,5"/>
+
+        <TextBlock Text="Currently Active Profile:" FontWeight="SemiBold" Margin="0,15,0,2"/>
+        <TextBlock x:Name="ActiveProfileText" FontSize="13" Foreground="DarkGreen" />
+
+        <TextBlock TextWrapping="Wrap" FontSize="12" Foreground="DarkSlateGray" Margin="10,20,0,0">
+            Auto-switching runs via Task Scheduler every 30 minutes. 
+            You can manually run the script above to test.
+        </TextBlock>
+    </StackPanel>
+</UserControl>

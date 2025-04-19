@@ -1,0 +1,14 @@
+{
+  "source": "D:\\Downloads",
+  "rules": {
+	  "PDFs": ["*.pdf"],
+	  "Pictures": ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.webp", "*.ico"],
+	  "Archives": ["*.zip", "*.rar", "*.7z", "*.bz2", "*.tar", "*.gz", "*.xz"],
+	  "Documents": ["*.docx", "*.txt", "*.xlsx", "*.md", "*.odt", "*.dtd", "*.oxt", "*.html", "*.htm", "*.xml", "*.svg", "*.pptm", "*.pptx", "*.doc", ".json"],
+	  "Installers": ["*.exe", "*.msi", "*.bat", "*.iso"],
+	  "Videos": ["*.mkv", "*.mp4"],
+	  "Music": ["*.mp3"],
+	  "DevFiles": ["*.cs", "*.resx"],
+	  "Folders": ["<FOLDERS>"]
+	}
+}
